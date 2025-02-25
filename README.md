@@ -55,3 +55,4 @@ Set up Consumer
 pip install kafka-python psycopg2-binary
 kafka-python -> Enables Python to consume messages from Kafka
 psycopg2-binary -> Allows Python to interact with PostgreSQL 
+python-dotenv --> to hide API key
