@@ -1,4 +1,15 @@
+Goal
+- Extract stock market data from an API
+- Transform it into a structured format
+- Load it into a database while streaming data in real-time
+- Use Kafka as the event-driven system for distributed data processing
 
+Tech stack:
+Component	        Technology
+Message Broker	    Kafka (Producer/Consumer)
+Data Processing	    Python (pandas, requests)
+Database	        PostgreSQL (or SQLite for local testing)
+Distributed         Computing	Apache Spark (later enhancement)
 
 Install
 brew --version ()
@@ -35,4 +46,12 @@ Start kafka consumer in new terminal:
 kafka-console-consumer --bootstrap-server localhost:9092 --topic test-topic --from-beginning
 (will show what i typed in the producer)
 
+Ctrl + C to exit shells
 
+Set up Kafka Producer
+Install dependencies: pip install requests kafka-python pandas psycopg2-binary
+
+Set up Consumer
+pip install kafka-python psycopg2-binary
+kafka-python -> Enables Python to consume messages from Kafka
+psycopg2-binary -> Allows Python to interact with PostgreSQL 
