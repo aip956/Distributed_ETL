@@ -56,3 +56,10 @@ pip install kafka-python psycopg2-binary
 kafka-python -> Enables Python to consume messages from Kafka
 psycopg2-binary -> Allows Python to interact with PostgreSQL 
 python-dotenv --> to hide API key
+
+
+Notes on Kafka:
+- Previously had Kafka-related directories, but not full Kafka install (i.e. no kafka-server-start.sh or kafka-topics.sh)
+- Kafka-related Python packages (confluent_kafka) - likely from a Python library (confluent-kafka), but not full Kafka server
+- Projects did not have the Kafka broker
+- 
