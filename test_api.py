@@ -4,8 +4,10 @@ from dotenv import load_dotenv
 
 # Fetch API key
 load_dotenv()
-api_key = os.getenv("API_KEY")
+API_KEY = os.getenv("API_KEY")
 
+if not API_KEY:
+    print("10 API_KEY not found")
 # Get Apple price
 STOCK_SYMBOL = "AAPL"
 
@@ -32,4 +34,4 @@ def fetch_stock_price():
         print("Error fetching stock data")
 
 # Run test
-fetch_stock_price
+fetch_stock_price()
