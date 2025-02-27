@@ -82,3 +82,19 @@ verify version
 - psql --version
 start postgres14:
 - pg_ctl -D /opt/homebrew/var/postgresql@14 start
+Check if postgres is running on 5432:
+- lsof -i :5432
+Kill the running postgres process:
+- kill -9 1804
+Stop postgres via homebrew:
+- brew services stop postgresql@14
+restart postgres:
+- pg_ctl -D /opt/homebrew/var/postgresql@14 start
+is postgres fully operational?
+- pg_ctl -D /opt/homebrew/var/postgresql@14 status
+Connect to psql:
+- psql -d postgres
+If needed run psql in the background:
+- brew services start postgresql@14
+
+
