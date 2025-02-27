@@ -12,8 +12,8 @@ if not API_KEY:
 STOCK_SYMBOL = "AAPL"
 
 # Alpha Vantage API URL
-url = f"https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol={STOCK_SYMBOL}&interval=1min&apikey={API_KEY}"
-
+# url = f"https://www.alphavantage.co/query?function=TIME_SERIES_INTRADAY&symbol={STOCK_SYMBOL}&interval=1min&apikey={API_KEY}"
+url = f"https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol={STOCK_SYMBOL}&apikey={API_KEY}"
 def fetch_stock_price():
     response = requests.get(url).json()
 
