@@ -19,11 +19,13 @@ def fetch_stock_price():
 
     try:
         # Get the most recent timestamp
-        latest_time = list(response["Time Series (1min)"].keys())[0]
-        stock_data = response["Time Series (1min)"][latest_time]
+        # latest_time = list(response["Time Series (1min)"].keys())[0]
+        # stock_data = response["Time Series (1min)"][latest_time]
+        latest_date = list(response["Time Series (Daily)"].keys())[0]
+        stock_data = response["Time Series (Daily)"][latest_date]
 
         # Print stock details
-        print(f"Stock Data for {STOCK_SYMBOL} at {latest_time}")
+        print(f"Stock Data for {STOCK_SYMBOL} at {latest_date}")
         print(f"Open: {stock_data['1. open']}")
         print(f"High: {stock_data['2. high']}")
         print(f"Low: {stock_data['3. low']}")

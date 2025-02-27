@@ -62,4 +62,23 @@ Notes on Kafka:
 - Previously had Kafka-related directories, but not full Kafka install (i.e. no kafka-server-start.sh or kafka-topics.sh)
 - Kafka-related Python packages (confluent_kafka) - likely from a Python library (confluent-kafka), but not full Kafka server
 - Projects did not have the Kafka broker
-- 
+
+Determine if Kafka and Zookeeper are running
+- brew services list
+to restart postgres: 
+- brew services restart postgresql@14
+to manually start postgres: 
+- pg_ctl -D /opt/homebrew/var/postgresql@14 start
+check versions of postgres:
+- brew list | grep postgresql
+which version running:
+- pg_ctl -D /opt/homebrew/var/postgresql@14 status
+upgrade shell to use homebrew postgres 14:
+- ls /opt/homebrew/bin/psql
+prioritize postgres 14:
+- echo 'export PATH="/opt/homebrew/bin:$PATH"' >> ~/.zshrc
+- source ~/.zshrc
+verify version
+- psql --version
+start postgres14:
+- pg_ctl -D /opt/homebrew/var/postgresql@14 start
