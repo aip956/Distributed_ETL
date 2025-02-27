@@ -14,3 +14,7 @@ consumer = KafkaConsumer(
 )
 
 # Consume messages
+print("Consumer is ready. Waiting for messages . . .")
+for message in consumer:
+    stock_data = message.value
+    print(f"Received stock data: {stock_data}")
