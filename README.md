@@ -1,4 +1,4 @@
-This is a distributed ETL pipeline for real-time financial data processing using Kafka and Spark Streaming. Extracted stock price data from an API, processed it in a distributed system, and stored structured data in PostgreSQL for financial analytics.
+This will be a distributed ETL pipeline for real-time financial data processing using Kafka and Spark Streaming. Extracted stock price data from an API, processed it in a distributed system, and stored structured data in PostgreSQL for financial analytics.
 
 Goal
 - Extract stock market data from an API
