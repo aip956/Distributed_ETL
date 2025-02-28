@@ -105,5 +105,12 @@ Adding Spark
 Verify:
 - spark-submit --version
 Verify pyspark:
-pyspark --version
-
+- pyspark --version
+Enter spark shell:
+- pyspark
+Test:
+- spark.range(10).show()
+Exit:
+- exit()
+Install dependencies:
+- pip install pyspark findspark
