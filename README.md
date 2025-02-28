@@ -114,3 +114,7 @@ Exit:
 - exit()
 Install dependencies:
 - pip install pyspark findspark
+Start process, import pyspark, print version:
+- python3 -c "import pyspark; print(pyspark.__version__)"
+Integrate Sprak Streaming with Kafka
+- touch spark_streaming.py
